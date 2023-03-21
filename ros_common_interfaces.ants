@@ -18,8 +18,8 @@ antExport ImporterConfig:
       skipFiles: []
       renameFiles:list:
         - Replace:
-          pattern: peg"^'string.' .+"
-          repl: "rstring$1"
+          pattern: peg"@@'__' {.+}" 
+          repl: "$1_$2"
 
       sourceMods:list:
         - CSrcMods:
