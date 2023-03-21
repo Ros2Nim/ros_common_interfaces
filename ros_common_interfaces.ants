@@ -24,20 +24,11 @@ antExport ImporterConfig:
 
       sourceMods:list:
         - CSrcMods:
-          fileMatch: peg"'qos_string_conversions.h'"
-
-        - CSrcMods:
-          fileMatch: peg"'init_options.h'"
+          fileMatch: peg"'.h'"
           substitutes:list:
             - Replace:
-              pattern: peg"'typedef struct rmw_init_options_impl_s'"
-              repl: "typedef struct rmw_init_options_impl_s {}"
-        - CSrcMods:
-          fileMatch: peg"'init.h'"
-          substitutes:list:
-            - Replace:
-              pattern: peg"'typedef struct rmw_context_impl_s'"
-              repl: "typedef struct rmw_context_impl_s {}"
+              pattern: peg"'bool &'"
+              repl: "bool *"
 
       c2nimCfgs:list:
         - C2NimCfg:
