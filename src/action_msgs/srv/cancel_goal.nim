@@ -8,7 +8,8 @@ import
   builtin_interfaces/msg/detail/time_struct, ./srv/detail/cancel_goal_functions,
   rosidl_runtime_c/visibility_control,
   ./msg/rosidl_generator_c_visibility_control,
-  ./srv/detail/cancel_goal_type_support,
+  ./srv/detail/cancel_goal_type_support, rosidl_typesupport_interface/macros,
   rosidl_runtime_c/message_type_support_struct,
   rosidl_runtime_c/service_type_support_struct, rcutils/allocator,
-  rcutils/macros, rcutils/types/rcutils_ret, rcutils/visibility_control_macros
+  rcutils/macros, rcutils/types/rcutils_ret, rcutils/visibility_control,
+  rcutils/visibility_control_macros

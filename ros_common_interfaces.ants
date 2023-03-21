@@ -11,7 +11,6 @@ antExport ImporterConfig:
         "deps/local/builtin_interfaces"
         "deps/local/unique_identifier_msgs"
         "deps/local/action_msgs"
-        "deps/rmw/rmw/include"
         "deps/rcutils/include"
         "deps/rosidl/rosidl_runtime_c/include"
         "deps/rosidl/rosidl_typesupport_interface/include"
@@ -36,19 +35,4 @@ antExport ImporterConfig:
           fileContents: str"""
               #mangle "'./qos_policy_kind'" "../qos_policy_kind"
               #mangle "'./events_statuses/'" "./"
-              """
-        - C2NimCfg:
-          fileMatch: peg"'domain_id.h'"
-          fileContents: str"""
-              #mangle "'SIZE_MAX'" "uint64.high"
-              """
-        - C2NimCfg:
-          fileMatch: peg"'time.h'"
-          rawNims: str"""
-              import rcutils/time
-              """
-        - C2NimCfg:
-          fileMatch: peg"'macros.h'"
-          fileContents: str"""
-              #delete RMW_WARN_UNUSED
               """

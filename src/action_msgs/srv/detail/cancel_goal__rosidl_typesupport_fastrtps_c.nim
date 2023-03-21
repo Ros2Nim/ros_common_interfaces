@@ -4,7 +4,7 @@
 
 import
   rosidl_runtime_c/message_type_support_struct,
-  rosidl_runtime_c/visibility_control,
+  rosidl_runtime_c/visibility_control, rosidl_typesupport_interface/macros,
   ./msg/rosidl_typesupport_fastrtps_c_visibility_control
 
 
@@ -44,7 +44,8 @@ proc rosidl_typesupport_fastrtps_c_get_message_type_support_handle_action_msgs_s
     header: "cancel_goal__rosidl_typesupport_fastrtps_c.h".}
 import
   rosidl_runtime_c/service_type_support_struct, rcutils/allocator,
-  rcutils/macros, rcutils/types/rcutils_ret, rcutils/visibility_control_macros
+  rcutils/macros, rcutils/types/rcutils_ret, rcutils/visibility_control,
+  rcutils/visibility_control_macros
 
 
 proc rosidl_typesupport_fastrtps_c_get_service_type_support_handle_action_msgs_srv__CancelGoal*(): ptr rosidl_service_type_support_t {.importc: "rosidl_typesupport_fastrtps_c__get_service_type_support_handle__action_msgs__srv__CancelGoal",

@@ -24,7 +24,6 @@
 #pragma c2nim mangle "@@ '_e'$" "$1_t"
 
 #pragma c2nim mangle "_Bool" "bool"
-#pragma c2nim mangle "rmw_time_s" "rmw_time_t"
 
 #pragma c2nim mangle " @@'__' {\\ident+}" "$1_$2"
 #pragma c2nim mangle " @@'__' {\\ident+}" "$1_$2"
@@ -33,14 +32,4 @@
 #pragma c2nim mangle "'UINT64_MAX'" "uint64.high"
 
 #pragma c2nim delete "rcutils/types"
-#pragma c2nim delete "rcutils/time"
-#pragma c2nim delete "./visibility_control"
-#pragma c2nim delete "./macros"
-#pragma c2nim delete "./error_handling"
-#pragma c2nim delete "rcutils/visibility_control"
-#pragma c2nim delete "rosidl_typesupport_interface/macros"
 
-#pragma c2nim delete "RMW_QOS_POLICY_LIVELINESS_MANUAL_BY_NODE_DEPRECATED_MSG"
-#pragma c2nim delete "RMW_QOS_DEADLINE_BEST_AVAILABLE"
-#pragma c2nim delete "RMW_QOS_LIVELINESS_LEASE_DURATION_BEST_AVAILABLE"
-#pragma c2nim delete "RMW_QOS_POLICY_DEPTH_SYSTEM_DEFAULT"

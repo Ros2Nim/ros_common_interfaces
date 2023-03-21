@@ -4,7 +4,7 @@
 
 import
   rosidl_runtime_c/message_type_support_struct,
-  rosidl_runtime_c/visibility_control,
+  rosidl_runtime_c/visibility_control, rosidl_typesupport_interface/macros,
   ./msg/rosidl_typesupport_fastrtps_c_visibility_control
 
 

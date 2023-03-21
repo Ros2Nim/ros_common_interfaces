@@ -8,5 +8,5 @@ import
   builtin_interfaces/msg/detail/time_struct, ./msg/detail/goal_status_functions,
   rosidl_runtime_c/visibility_control,
   ./msg/rosidl_generator_c_visibility_control,
-  ./msg/detail/goal_status_type_support,
+  ./msg/detail/goal_status_type_support, rosidl_typesupport_interface/macros,
   rosidl_runtime_c/message_type_support_struct

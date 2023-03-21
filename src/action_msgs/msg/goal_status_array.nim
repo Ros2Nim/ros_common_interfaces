@@ -9,4 +9,5 @@ import
   ./msg/detail/goal_status_array_functions, rosidl_runtime_c/visibility_control,
   ./msg/rosidl_generator_c_visibility_control,
   ./msg/detail/goal_status_array_type_support,
+  rosidl_typesupport_interface/macros,
   rosidl_runtime_c/message_type_support_struct

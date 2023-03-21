@@ -3,6 +3,7 @@
 ##  generated code does not contain a copyright notice
 
 import
+  rosidl_typesupport_interface/macros,
   ./msg/rosidl_generator_c_visibility_control,
   rosidl_runtime_c/message_type_support_struct,
   rosidl_runtime_c/visibility_control
