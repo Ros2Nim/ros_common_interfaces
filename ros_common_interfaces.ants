@@ -4,10 +4,13 @@ import cimporter/configs
 antExport ImporterConfig:
   cimports:list:
     - ImportConfig:
-      name: "rmw"
-      sources: "deps/rmw/rmw/include"
+      name: "action_msgs"
+      sources: "deps/local/action_msgs/"
       globs: ["**/*.h"]
       includes:list:
+        "deps/local/builtin_interfaces"
+        "deps/local/unique_identifier_msgs"
+        "deps/local/action_msgs"
         "deps/rmw/rmw/include"
         "deps/rcutils/include"
         "deps/rosidl/rosidl_runtime_c/include"
